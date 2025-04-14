@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="A guide for keeping pet rats happy and healthy.">
+   <meta name="keywords" content="rats, care, pet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS/styles.css">
+   <title>A Guide to Keeping Pet Rats</title>
+   <style>
+      .raven {
+         float: left;
+         width: 366.7px;
+         height: 333.3px;
+         margin: 0 14px 0 0;
+      }
+
+      .contact {
+         clear: both;
+         /* Creates border around contact form */
+         border: 6px lightblue solid;
+         box-sizing: border-box;
+         padding: 14px;
+      }
+
+      label:not(.radio),
+      legend {
+         font: 400 18px/1.4 "Lilita One", sans-serif;
+         color: midnightblue;
+      }
+
+      /* CREATES GRID LAYOUT FOR FORM */
+      .form_grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 400px;
+         row-gap: 20px;
+      }
+
+      label:not(.radio) {
+         grid-column: 1 / 2;
+      }
+
+      input:not(.radio) {
+         grid-column: 2 / 3;
+         width: 200px;
+         justify-self: end;
+      }
+
+      fieldset {
+         grid-column: 1 / 3;
+      }
+
+      .fieldset {
+         /* Makes each radio button appear on a new line */
+         display: block;
+      }
+
+      /* Creates separate grid for textarea and selectlist forms */
+      .form_grid2 {
+         display: grid;
+         width: 400px;
+         grid-template-columns: 3fr 1fr;
+         margin-top: 20px;
+      }
+
+      #text,
+      [for="text"] {
+         /* Makes textarea span both columns */
+         grid-column: 1 / 3;
+      }
+
+      /* Adds spacing to match the row gap of the first grid*/
+      #select,
+      [for="select"] {
+         margin-top: 20px;
+      }
+
+      button {
+         margin-top: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="page">
+      <header>
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html" title="Home page">Home</a>
+               </li>
+               <li>
+                  <a href="basic_care.html" title="Basic care">Basic Care</a>
+               </li>
+               <li>
+                  <a href="illness.html" title="Treating illness">Treating Illness</a>
+               </li>
+               <li>
+                  <a href="safe_food.html" title="Safe foods">Safe Foods</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+
+      <main>
+         <section title="Introduction">
+            <h1>A Guide to Keeping Pet Rats</h1>
+            <picture>
+               <source srcset="Images/raven-550w.jpg 550w, Images/raven-1100w.jpg 1100w, Images/raven-2200w.jpg 2200w"
+                  sizes="(max-width: 1100px) 550px,
+               (max-width: 2200px) 1100px,
+               2200px">
+               <img src="Images/raven-1100w.jpg" alt="Rat eating treat from hand" width="1100" height="1000"
+                  class="raven">
+            </picture>
+
+            <p>Rats are smart, inquisitive and loving animals that make wonderful pets, but they take more work than
+               their small stature would imply. They aren't for the faint of heart; they live short lives, are prone to
+               illness, require a lot of attention, and are quite destructive. For all the joy that they give, they can
+               cause just as much stress. They are chaos incarnate, but if you decide they're the right pet for you I
+               highly doubt you'll regret it.</p>
+            <p>I made this guide to help potential new owners understand it takes to own rats, and provide a single
+               resource that contains the basics of keeping them happy and healthy. I have rats myself, and I wanted to
+               share what I've learned to help others avoid the mistakes I've made. This website contains my own
+               opinions and experiences, as well as information gathered from other resources. As with any new pet, be
+               sure to do a lot of research before bringing a new rat home, but I believe this is a good place to start.
+            </p>
+         </section>
+         <section title="Contact form" class="contact">
+            <h2>Contact Me!</h2>
+            <p>If you have any questions or concerns about your own rats, or the information on this website, feel free
+               to contact me using the form below!</p>
+            <form method="get">
+               <div class="form_grid">
+                  <label for="dt">Date</label>
+                  <input id="dt" name="date" type="date" required>
+
+                  <label for="fn">First Name</label>
+                  <input id="fn" name="first_name" required>
+
+                  <label for="ln">Last Name</label>
+                  <input id="ln" name="last_name">
+
+                  <label for="em">Email</label>
+                  <input id="em" name="email" type="email" required>
+
+                  <label for="pn"> Phone Number</label>
+                  <input id="pn" name="phone" type="tel">
+                  <fieldset>
+                     <legend>Reason for Contact</legend>
+                     <div class="fieldset">
+                        <input id="adv" name="reason" type="radio" value="advice" class="radio">
+                        <label for="adv" class="radio">Advice</label>
+                     </div>
+                     <div class="fieldset">
+                        <input id="que" name="reason" type="radio" value="question" class="radio">
+                        <label for="que" class="radio">Questions</label>
+                     </div>
+                     <div class="fieldset">
+                        <input id="wro" name="reason" type="radio" value="misinformation" class="radio">
+                        <label for="wro" class="radio">Wrong Information</label>
+                     </div>
+                     <div class="fieldset">
+                        <input id="bug" name="reason" type="radio" value="bugs" class="radio">
+                        <label for="bug" class="radio">Site Bugs</label>
+                     </div>
+                     <div class="fieldset">
+                        <input id="oth" name="reason" type="radio" value="other" class="radio">
+                        <label for="oth" class="radio">Other</label>
+                     </div>
+                  </fieldset>
+               </div>
+               <div class="form_grid2">
+                  <label for="text">Please Provide Details</label>
+                  <textarea id="text" name="reason_details" rows="10" required></textarea>
+
+                  <label for="select">Preferred Method of Contact</label>
+                  <select id="select" name="contact_method">
+                     <option>Email</option>
+                     <option>Call</option>
+                     <option>Text</option>
+                  </select>
+               </div>
+               <button type="submit">Submit</button>
+            </form>
+         </section>
+      </main>
+
+      <footer>
+         <ul>
+            <li>
+               <a href="index.html" title="Home page">Home</a>
+            </li>
+            <li>
+               <a href="basic_care.html" title="Basic care">Basic Care</a>
+            </li>
+            <li>
+               <a href="illness.html" title="Treating illness">Treating Illness</a>
+            </li>
+            <li>
+               <a href="safe_food.html" title="Safe foods">Safe Foods</a>
+            </li>
+         </ul>
+      </footer>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+/* COLORS 
+HEADER/FOOTER
+   lightpink
+   palevioletred
+   darkslateblue
+HEADINGS
+   midnightblue
+   darkslateblue
+   teal
+   lightblue
+BODY
+   black
+   mistyrose
+   white
+*/
+
+
+/* FONTS: Lato, Lilita One */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&display=swap');
+
+/* ---------- BODY STYLING ---------- */
+body {
+   font: 400 18px/1.4 'Lato', sans-serif;
+   color: black;
+   background-color:mistyrose;
+   max-width: 1250px;
+   margin: 0 auto;
+}
+.page {
+   /* White background and internal padding 
+   for header, main, and footer*/
+   background-color: white;
+   box-sizing: border-box;
+   padding: 10px;
+}
+main {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+section {
+   margin: 30px 0;
+}
+p {
+   margin: 0 0 10px 0;
+}
+header {
+   width: 100%;
+   height: 100px;
+   border-bottom:mistyrose 3px solid;
+   margin-bottom: 50px;
+}
+footer {
+   width: 100%;
+   height: 150px;
+   border-top: mistyrose 3px solid;
+   margin-top: 50px;
+}
+li {
+   list-style-type: square;
+}
+
+/* ---------- HEADING STYLING ---------- */
+h1 {
+   font: 400 30px/1.4 'Lilita One', sans-serif;
+   letter-spacing: 1px;
+   color:midnightblue;
+   margin: 0 0 10px 0;
+   border-bottom: 6px dotted lightblue;
+}
+h2 {
+   font: 400 24px/1.4 'Lilita One', sans-serif;
+   letter-spacing: .5px;
+   color: darkslateblue;
+   margin: 22px 0 5px 0;
+}
+h3 {
+   font: 700 20px/1.4 'Lato', sans-serif;
+   letter-spacing: .2px;
+   color: teal;
+   margin: 18px 0 0 0;
+}
+
+/* ---------- SITE NAVIGATION STYLING ---------- */
+nav li, footer li {
+   list-style-type: none;
+}
+nav ul {
+   font: 400 22px/1.4 'Lilita One', sans-serif;
+   letter-spacing: .5px;
+   margin: 0;
+   display: flex;
+   /* Vertically centers */
+   height: 100px;
+   align-items: center;
+}
+nav a {
+   color:midnightblue;
+   text-decoration: none; 
+   /* Button styling*/
+   margin: 0 20px 0 0;
+   background-color: lightpink;
+   border:palevioletred 5px solid;
+   box-sizing: border-box;
+   padding: 8px 16px;
+   border-radius: 5px;
+}
+nav a:hover {
+   color: darkslateblue;
+   background-color: mistyrose;
+   border: lightpink 5px solid;
+}
+nav a:active {
+   color: darkslateblue;
+   background-color: mistyrose;
+   border: lightpink 3px solid;
+}
+/* Footer links */
+footer a {
+   font: 400 18px/1.4 'Lilita One', sans-serif;
+   padding: 10px 10px 10px 0;
+}
+footer li {
+   margin: 6px 0;
+}
+
+/* ---------- LINKS ---------- */
+a {
+   color: teal;
+}
+a:hover {
+   color: palevioletred;
+}
+a:active {
+   color: lightpink;
+}
+a:visited {
+   color: darkslateblue;
+}
+
+
+/* ---------- FOOD PAGE STYLING: safe_food.html ---------- */
+img.sophie {
+   float: left;
+   width: 320px;
+   height: 320px;
+   margin: 0 10px 10px 0;
+}
+/* Adds/removes spacing from p & ul below introduction */
+p.rules {
+   margin-bottom: 5px;
+}
+ul.rules {
+   margin: 0;
+}
+div.rules {
+   clear: both;
+   margin: 20px 0;
+}
+/* VEGETABLE & FRUIT SECTIONS */
+img.veggies, img.fruits {
+   width: 70%;
+   height: 70%;
+   display: block;
+   margin: 0 auto;
+}
+.caption{
+   /* Styles attribute to image photographer */
+   text-align: center;
+   font: italic 300 18px/1.4 'Lato', sans-serif;
+}
+.img_paragraph {
+   /* Makes paragraph the same width as image */
+   width:70%;
+   margin: 0 auto;
+}
+.food_h2 {
+   /* Styles headings */
+   text-align: center;
+   border-bottom: dotted 4px lightblue;
+   font: 400 28px/1.4 'Lilita One', sans-serif;
+   width: 70%;
+   margin: 10px auto;
+}
+
+/* TABLE STYLING */
+table {
+   border-collapse: collapse;
+}
+th{
+   text-align: left;
+   background-color: teal;
+   color: white;
+}
+td, th {
+   padding: 5px;
+   border: 2px black solid;
+}
+tr:nth-child(even){
+   background-color: lightblue;
+}
+
+/* DEFINITION LIST STYLING */
+dt {
+   font: 700 18px/1.4 'Lato', sans-serif;
+}
+dd {
+   font:300 18px/1.4 'Lato', sans-serif;
+   margin-bottom: 12px;
+}
+
+/* ---------- CARE PAGE STYLING: basic_care.html ---------- */
+img.badcage {
+   width: 80%;
+   height: 80%;
+   display: block;
+   margin: 10px auto;
+}
+img.cage {
+   width: 40%;
+   height: 40%;
+   float: left;
+   margin: 6px 14px 0 0;
+}
+/* ENRICHMENT IDEAS H3 SECTION */
+.enrichment_grid {
+   /* Creates grid for image and list to sit side by side */
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   align-items: center;
+}
+img.hammock{
+   width: 250px;
+   height: 308.5px;
+   grid-column: 1 / 2;
+}
+div.col2 {
+   grid-column: 2 / 3;
+}
+/* Aligns heading & list in grid */
+h3.enrichment {
+   margin-left: 22px;
+}
+ul.enrichment {
+   margin-top: 2px;
+}
+
+
+/* ---------- PHONE ---------- */
+@media screen and (max-width: 730px) {
+   body {
+      background-color: white;
+      font-size: 16px;
+      line-height: 1.2;
+      box-sizing: border-box;
+      padding: 10px;
+   }
+   h1 {
+      text-align: center;
+      font-size: 28px;
+   }
+   h2 {
+      font-size: 22px;
+   }
+   h3 {
+      font-size:18px;
+   }
+   /* UNFLOATS IMAGES*/
+   img.sophie {
+      width: 45%;
+      height: 45%;
+      float: none;
+      display: block;
+      margin: 8px auto;
+   }
+   img.raven {
+      width: 50%;
+      height: 50%;
+      float: none;
+      display: block;
+      margin: 8px auto;
+   }
+   /* INCREASES FOOTER LINK PADDING & MARGINS */
+   footer ul {
+      padding-left: 0;
+   }
+   footer li {
+      margin: 14px 0;
+   }
+   footer a {
+      padding: 16px 16px 16px 0;
+   }
+   /* CHANGES HEADER & SITE NAV BUTTONS */
+   header {
+      height: 210px;
+   }
+   nav ul {
+      font: 400 18px/1.2 'Lilita One', sans-serif;
+      display: block;
+      padding-left: 0;
+   }
+   nav li {
+      margin: 30px 0;
+   }
+   nav a {
+      margin: 0 10px 0 0;
+      padding: 8px 12px;
+      border-width: 3px;
+   }
+   nav a:hover {
+      border-width: 3px;
+      padding: 8px 12px;
+   }
+   nav a:active {
+      border-width: 2px;
+      padding: 6px 10px;
+   }
+   /* ENRICHMENT IDEAS H3 SECTION */
+   .enrichment_grid {
+      display: block;
+   }
+   img.hammock{
+      width: 50%;
+      height: 50%;
+      display: block;
+      margin: 0 auto;
+   }
+   div.col2 {
+      grid-column: 2 / 3;
+   }
+   h3.enrichment {
+      margin-left: 0;
+   }
+}
